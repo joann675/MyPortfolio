@@ -3,7 +3,10 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: black;
-  background: url("../images/concrete_seamless.png");
+  
+  background: url('../images/myBorder.jpg') no-repeat center center fixed; 
+ 
+  background-size: cover;
 }
 
 * {
@@ -35,14 +38,14 @@ h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  color: #920774;
+  color: #036e01;
 }
 
 h1 {
   padding-bottom: 20px;
   font-size: 30px;
   line-height: 49px;
-  border-bottom: 3px solid #dddddd;
+  border-bottom: 3px solid #8B4513;
 }
 
 h2,
@@ -61,7 +64,7 @@ h3 {
   margin: 0 0 30px;
   overflow: auto;
   color: #ffffff;
-  background: #920774;
+  background: #036e01;
   border-bottom: 2px solid #cccccc;
 }
 
@@ -76,7 +79,7 @@ h3 {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background: #920774;
+  background: #036e01;
 }
 
 nav {
@@ -108,7 +111,7 @@ footer {
   color: #cccccc;
   text-align: center;
   background: #666666;
-  border-top: 8px solid #920774;
+  border-top: 8px solid #036e01;
   height: 50px;
 }
 
@@ -149,7 +152,7 @@ h3, h2 {
 
 .work img {
   width: 100%;
-  border: 3px solid #920774;
+  border: 3px solid #036e01;
   
   opacity: 0.8;
 }
@@ -164,7 +167,7 @@ h3, h2 {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: #920774;
+  background: #036e01;
   border-bottom: 0;
 }
 
@@ -178,22 +181,6 @@ h3, h2 {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  text-decoration: none;
-  font-size: 22px;
-  border-bottom: 0;
-}
-
-.work aSave {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-  background: #920774;
   text-decoration: none;
   font-size: 22px;
   border-bottom: 0;
@@ -245,7 +232,7 @@ input[type=submit] {
   font-size: 18px;
   color: #ffffff;
   cursor: pointer;
-  background: #920774;
+  background: #036e01;
   border: 0 none;
 }
 
@@ -307,7 +294,7 @@ input[type=submit] {
   #masthead {
     position: static;
     margin: 0;
-    background: #920774;
+    background: #036e01;
   }
 
   .auth-image {
