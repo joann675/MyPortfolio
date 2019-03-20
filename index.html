@@ -114,6 +114,27 @@
 
 
       </div>
+
+      <div class="work">
+        <img src="assets/images/voice-answer-feature.png" alt="Liri" width=274px height=205px>
+
+        <a class="launcher" href="#">Liri</a>
+        <a class="githubLink" href="https://github.com/joann675/liri-node-app.git" target="_blank"><i
+            class="fa fa-github"></i></a>
+        <a class="infoLink" id="liri" href="#"><i class="fa fa-info-circle"></i></a>
+
+
+      </div>
+      <div class="work">
+        <img src="assets/images/wordGuess.jpg" alt="wordGuess" width=274px height=205px>
+
+        <a class="launcher" href="https://drive.google.com/file/d/1t5oJ5Dwv44y9fOGpYfA_lJNokx2gQaVn/view">Word Guess</a>
+        <a class="githubLink" href="https://github.com/joann675/wordGuess.git" target="_blank"><i
+            class="fa fa-github"></i></a>
+        <a class="infoLink" id="wordGuessNode" href="#"><i class="fa fa-info-circle"></i></a>
+
+
+      </div>
       <div class="work">
         <img src="assets/images/bamazon.jpg" alt="Bamazon" width=274px height=205px>
 
@@ -166,12 +187,13 @@
               <!-- close button -->
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                   aria-hidden="true">×</span></button>
-              <h4 class="modal-title" id="ProjectModalLabel">Technologies Used</h4>
+              <h4 class="modal-title" id="ProjectModalLabel">About</h4>
             </div>
             <div class="modal-body">
 
               <!--<img class="modalImg" src="#" /> -->
-
+              <p id="info"></p>
+              <h4>Technologies Used:</h4>
               <p id="technologies"></p>
 
 
@@ -226,52 +248,74 @@
 <script type="text/javascript">
   $("#wordGuess").on("click", function (event) {
     event.preventDefault();
+    $("#info").text("This is a WordGuess game that will run in the browser, and features dynamically updated HTML and CSS powered by JavaScript code.");
     $("#technologies").text("HTML, CSS and JavaScript");
     $("#myModal").modal("toggle");
   });
   $("#starWars").on("click", function (event) {
     event.preventDefault();
+    $("#info").text("A fun and interactive game for web browsers. HTML pages are dynamically updated using the jQuery library.");
     $("#technologies").text("HTML, CSS, JavaScript and JQuery");
     $("#myModal").modal("toggle");
   });
   $("#trivia").on("click", function (event) {
     event.preventDefault();
+    $("#info").text("A Trivia game using JavaScript for the logic, jQuery to manipulate HTML and timers to make the game even more challenging.");
     $("#technologies").text("HTML, CSS, JavaScript and JQuery");
     $("#myModal").modal("toggle");
   });
   $("#GifTastic").on("click", function (event) {
     event.preventDefault();
+    $("#info").text("Using the GIPHY API and the JQuery AJAX API, this site allows the user to load up to 10 images at a time of a specific dog breed. The initial pictures are static, non-animated gif images but will become animated when clicked on.");
     $("#technologies").text("HTML, Bootstrap JavaScript, JQuery and Ajax");
     $("#myModal").modal("toggle");
   });
   $("#trainTime").on("click", function (event) {
     event.preventDefault();
+    $("#info").text("This is a train schedule application that incorporates Firebase to host arrival and departure data. This app retrieves and manipulates train scheculde information with Moment.js. This website will provide up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station. The 'minutes to arrival' and 'next train time' will be automatically updated every minute.");
     $("#technologies").text("HTML, Bootstrap JavaScript, Firebase and Moment");
     $("#myModal").modal("toggle");
   });
   $("#dineDash").on("click", function (event) {
     event.preventDefault();
+    $("#info").text("Integrates Zomato and MapQuest APIs along with FullCalendar.js and an awesome UI developed with Bootstrap to give the user a seamless experience when making restaurant and travel plans.");
     $("#technologies").text("HTML, CSS, Bootstrap, JQuery, Ajax, Firebase, FullCalendar");
+    $("#myModal").modal("toggle");
+  });
+  $("#liri").on("click", function (event) {
+    event.preventDefault();
+    $("#info").text("LIRI is a Language Interpretation and Recognition Interface. Using Axios, concert data is retrieved from the bands in town artist events api, songs from spotify, or movies from IMDB.");
+    $("#technologies").text("Axios, Node.js, fs package and Moment");
+
+    $("#myModal").modal("toggle");
+  });
+  $("#wordGuessNode").on("click", function (event) {
+    event.preventDefault();
+    $("#info").text("WordGuess is a command line application that can be run under node.js. When a game is started, a random word is selected and a word object is created. The user is then prompted through the inquirer package to guess letters.");
+    $("#technologies").text("Node.js, Constructors and Inquirer package");
     $("#myModal").modal("toggle");
   });
   $("#bamazon").on("click", function (event) {
     event.preventDefault();
+    $("#info").text("Bamazon is an Amazon-like storefront that can take in orders from customers, deplete stock from the store's inventory, track product sales across departments and provide a summary of the highest-grossing departments in the store.");
     $("#technologies").text("Node.js, MySQL, Inquirer and console.table packages");
     $("#myModal").modal("toggle");
   });
   $("#friendFinder").on("click", function (event) {
     event.preventDefault();
+    $("#info").text("FriendFinder is a full stack application that will allow the user to enter their answers to 10 questions. Based on the user's response, their compatibility to other users will be determined and they will be shown the name and picture of their best match.");
     $("#technologies").text("HTML, Bootstrap, Node.js, ExpressJS");
-
     $("#myModal").modal("toggle");
   });
   $("#burgers").on("click", function (event) {
     event.preventDefault();
+    $("#info").text("Eat-da-burger is a full stack restaurant application that allows users to input the names of burgers they'd like to eat. When a user submits a burger's name, that burger is displayed on the left side of the page - waiting to be devoured. Each burger on the left side also has a 'Devour it!' button. When this button is clicked, the burger moves to the right side of the page. Every burger whether devoured or not is stored in the database.");
     $("#technologies").text("Node.js, ExpressJS, express-handlebars, MySQL and a homemade ORM following the MVC design pattern");
     $("#myModal").modal("toggle");
   });
   $("#gameCentral ").on("click", function (event) {
     event.preventDefault();
+    $("#info").text("GameCentral is an interactive app that enables user to search for new games and returns information on game and release date. User can then save this game as one to be played. You can keep track of the games that you have played, ones you are currently playing and those you want to play in the future. You also have the ability to rate the game.")
     $("#technologies").text("HTML, CSS, Foundation, Axios, Node.js, ExpressJS, MySQL database, Sequelize and Passport");
     $("#myModal").modal("toggle");
   });
