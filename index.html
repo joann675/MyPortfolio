@@ -178,6 +178,18 @@
 
       </div>
 
+      <div class="work">
+        <img src="assets/images/news.jpg" alt="mongoScraper" width=274px height=205px>
+
+        <a class="launcher" href="https://guarded-scrubland-50215.herokuapp.com/">mongoScraper</a>
+        <a class="githubLink" href="https://github.com/joann675/mongoScraper.git" target="_blank"><i
+            class="fa fa-github"></i></a>
+        <a class="infoLink" id="mongoScraper" href="#"><i class="fa fa-info-circle"></i></a>
+
+
+      </div>
+
+
 
 
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" style="display: none;">
@@ -317,6 +329,12 @@
     event.preventDefault();
     $("#info").text("GameCentral is an interactive app that enables user to search for new games and returns information on game and release date. User can then save this game as one to be played. You can keep track of the games that you have played, ones you are currently playing and those you want to play in the future. You also have the ability to rate the game.")
     $("#technologies").text("HTML, CSS, Foundation, Axios, Node.js, ExpressJS, MySQL database, Sequelize and Passport");
+    $("#myModal").modal("toggle");
+  });
+  $("#mongoScraper").on("click", function (event) {
+    event.preventDefault();
+    $("#info").text("MongoScraper is an interactive app that enables users to scrape news articles from the Huffington Post. The user can save articles and add notes to the articles that have been saved.")
+    $("#technologies").text("express, express-handlebars, Bootstrap, Axios, Node.js, cheerio, Mongoose and morgan for logging");
     $("#myModal").modal("toggle");
   });
 
