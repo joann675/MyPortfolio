@@ -188,6 +188,19 @@
 
       </div>
 
+      <div class="work">
+        
+        <img src="assets/images/photo-1532211387405-12202cb81d7b.jpg" alt="clickyGame" width=274px height=205px>
+        <a class="launcher" href="https://joann675.github.io/clickygame/">ClickyGame</a>
+        <a class="githubLink" href="https://github.com/joann675/clickygame.git" target="_blank"><i
+            class="fa fa-github"></i></a>
+        <a class="infoLink" id="clickygame" href="#"><i class="fa fa-info-circle"></i></a>
+
+       
+
+
+      </div>
+
 
 
 
@@ -334,6 +347,12 @@
     event.preventDefault();
     $("#info").text("MongoScraper is an interactive app that enables users to scrape news articles from the Huffington Post. The user can save articles and add notes to the articles that have been saved.")
     $("#technologies").text("express, express-handlebars, Bootstrap, Axios, Node.js, cheerio, Mongoose and morgan for logging");
+    $("#myModal").modal("toggle");
+  });
+  $("#clickygame").on("click", function (event) {
+    event.preventDefault();
+    $("#info").text("Clicky Game is a a memory game created with React.")
+    $("#technologies").text("React, Bootstrap, CSS and ES6");
     $("#myModal").modal("toggle");
   });
 
