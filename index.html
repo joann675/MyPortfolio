@@ -201,6 +201,17 @@
 
       </div>
 
+      <div class="work">
+        
+        <img src="assets/images/books-shelves-architecture-wood-442420.jpg" alt="bookSearch" width=274px height=205px>
+        <a class="launcher" href="https://shrouded-wildwood-69404.herokuapp.com/">Book Search</a>
+        <a class="githubLink" href="https://github.com/joann675/bookSearch_MERN.git" target="_blank"><i
+            class="fa fa-github"></i></a>
+        <a class="infoLink" id="bookSearch" href="#"><i class="fa fa-info-circle"></i></a>
+
+
+      </div>
+
 
 
 
@@ -353,6 +364,13 @@
     event.preventDefault();
     $("#info").text("Clicky Game is a a memory game created with React.")
     $("#technologies").text("React, Bootstrap, CSS and ES6");
+    $("#myModal").modal("toggle");
+  });
+  $("#bookSearch").on("click", function (event) {
+    event.preventDefault();
+    $("#info").text("BookSearch_MERN is a React-based Google Books Search app. Users can search for books via the Google Books API and save books to a Mongo database.")
+
+    $("#technologies").text("Mongo DB/Mongoose, Express.js, React, Node.js, Bootstrap, CSS, ES6, Axios");
     $("#myModal").modal("toggle");
   });
 
