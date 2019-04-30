@@ -211,6 +211,16 @@
 
 
       </div>
+      <div class="work">
+        
+        <img src="assets/images/carmenbackground.jpg" alt="carmenapp" width=274px height=205px>
+        <a class="launcher" href="https://salty-sea-39563.herokuapp.com/">Carmen's Travel App</a>
+        <a class="githubLink" href="https://github.com/Ilene0413/carmenstravelapp.git" target="_blank"><i
+            class="fa fa-github"></i></a>
+        <a class="infoLink" id="carmenapp" href="#"><i class="fa fa-info-circle"></i></a>
+
+
+      </div>
 
 
 
@@ -371,6 +381,13 @@
     $("#info").text("BookSearch_MERN is a React-based Google Books Search app. Users can search for books via the Google Books API and save books to a Mongo database.")
 
     $("#technologies").text("Mongo DB/Mongoose, Express.js, React, Node.js, Bootstrap, CSS, ES6, Axios");
+    $("#myModal").modal("toggle");
+  });
+  $("#carmenapp").on("click", function (event) {
+    event.preventDefault();
+    $("#info").text("This app is a version of the game Where in the World is Carmen Sandiego. The app can also be used as a travel guide. The app has commercial value by making researching a trip more fun and it can also can be used as a learning tool for adults and children.")
+
+    $("#technologies").text("React, JSX, React-bootstrap, Express.js, Axios, Mongo DB/Mongoose, Cesium, resium, tts-speech, react-player, craco, triposo, Pexel API, Facebook-login, ES6, Javascript, popover buttons, HTML, CSS");
     $("#myModal").modal("toggle");
   });
 
